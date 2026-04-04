@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Noise-Cancelling Headphones",
+    "price": 7999,
+    "originalPrice": 12999,
+    "discount": 38,
+    "rating": 5,
+    "reviews": 2341,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "description": "Premium wireless headphones with active noise cancellation. 30-hour battery life, foldable design, and deep bass. Perfect for travel, work, and commuting."
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Gaming Keyboard RGB",
+    "price": 5499,
+    "originalPrice": 8999,
+    "discount": 39,
+    "rating": 4,
+    "reviews": 1876,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80",
+    "description": "Compact TKL mechanical keyboard with tactile switches, per-key RGB backlighting, and durable aluminium frame. Great for gaming and programming."
+  },
+  {
+    "id": 3,
+    "name": "Smart Watch Fitness Tracker",
+    "price": 5999,
+    "originalPrice": 9999,
+    "discount": 40,
+    "rating": 4,
+    "reviews": 987,
+    "category": "Wearables",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "description": "Track steps, heart rate, sleep quality, and more. Waterproof design with multi-day battery. Pairs with iOS and Android."
+  },
+  {
+    "id": 4,
+    "name": "Portable Bluetooth Speaker",
+    "price": 3999,
+    "originalPrice": 6999,
+    "discount": 43,
+    "rating": 5,
+    "reviews": 3210,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80",
+    "description": "360° sound, IPX7 waterproof, and long battery life. Loud, clear audio for outdoors and home use."
+  },
+  {
+    "id": 5,
+    "name": "USB-C Hub 7-in-1 Adapter",
+    "price": 2499,
+    "originalPrice": 4499,
+    "discount": 44,
+    "rating": 4,
+    "reviews": 654,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=600&q=80",
+    "description": "HDMI 4K, USB-A ports, SD reader, and 100W PD pass-through — all from one USB-C port."
+  },
+  {
+    "id": 6,
+    "name": "Laptop Stand Adjustable Aluminium",
+    "price": 3499,
+    "originalPrice": 5499,
+    "discount": 36,
+    "rating": 5,
+    "reviews": 1123,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&q=80",
+    "description": "Ergonomic folding aluminium stand with adjustable height. Improves posture and airflow."
+  },
+  {
+    "id": 7,
+    "name": "Webcam 4K Ultra HD with Mic",
+    "price": 8999,
+    "originalPrice": 13999,
+    "discount": 36,
+    "rating": 4,
+    "reviews": 789,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1587826080692-f439cd35b70a?w=600&q=80",
+    "description": "Sharp 4K video for meetings and streaming. Built-in noise-cancelling microphone with autofocus."
+  },
+  {
+    "id": 8,
+    "name": "Ergonomic Wireless Mouse",
+    "price": 3999,
+    "originalPrice": 6499,
+    "discount": 38,
+    "rating": 5,
+    "reviews": 2098,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=600&q=80",
+    "description": "Sculpted for comfort with silent clicks and precision tracking. Reliable wireless connectivity."
+  }
+]

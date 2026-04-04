@@ -1,0 +1,12 @@
+{"level":"info","message":{"error":false,"method":"GET","path":"/","response_time_ms":7,"status":200,"timestamp":"2026-04-04T18:33:38.023Z"},"timestamp":"2026-04-04T18:33:38.024Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/1","response_time_ms":1,"status":200,"timestamp":"2026-04-04T18:33:38.047Z"},"timestamp":"2026-04-04T18:33:38.047Z"}
+{"level":"info","message":{"error":true,"method":"GET","path":"/9999","response_time_ms":1,"status":404,"timestamp":"2026-04-04T18:33:38.057Z"},"timestamp":"2026-04-04T18:33:38.057Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/","response_time_ms":1,"status":200,"timestamp":"2026-04-04T18:33:38.065Z"},"timestamp":"2026-04-04T18:33:38.065Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/health","response_time_ms":2,"status":200,"timestamp":"2026-04-04T18:33:38.074Z"},"timestamp":"2026-04-04T18:33:38.074Z"}
+{"level":"info","message":{"error":false,"method":"POST","path":"/login","response_time_ms":2,"status":200,"timestamp":"2026-04-04T18:33:38.102Z"},"timestamp":"2026-04-04T18:33:38.103Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/","response_time_ms":10,"status":200,"timestamp":"2026-04-04T19:17:10.340Z"},"timestamp":"2026-04-04T19:17:10.341Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/1","response_time_ms":2,"status":200,"timestamp":"2026-04-04T19:17:10.359Z"},"timestamp":"2026-04-04T19:17:10.359Z"}
+{"level":"info","message":{"error":true,"method":"GET","path":"/9999","response_time_ms":2,"status":404,"timestamp":"2026-04-04T19:17:10.392Z"},"timestamp":"2026-04-04T19:17:10.392Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/","response_time_ms":1,"status":200,"timestamp":"2026-04-04T19:17:10.402Z"},"timestamp":"2026-04-04T19:17:10.402Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/health","response_time_ms":2,"status":200,"timestamp":"2026-04-04T19:17:10.420Z"},"timestamp":"2026-04-04T19:17:10.420Z"}
+{"level":"info","message":{"error":false,"method":"POST","path":"/login","response_time_ms":2,"status":200,"timestamp":"2026-04-04T19:17:10.464Z"},"timestamp":"2026-04-04T19:17:10.464Z"}
