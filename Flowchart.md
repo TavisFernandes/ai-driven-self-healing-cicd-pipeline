@@ -15,33 +15,8 @@ Simulate real-world traffic conditions (we used OMNeT++ for simulation)
 Ensure system reliability and minimal downtime
 
 
-Developer → Code Push
-        ↓
-     Jenkins
-        ↓
-   Build + Test
-        ↓
- Docker Deploy
-        ↓
- Canary Release (10%)
-        ↓
- Monitoring System
-        ↓
-   ML Model Decision
-     ↓         ↓
-  Safe       Fail
-   ↓           ↓
-Full Deploy   Rollback
-        ↓
- Dashboard
+![alt text](image-3.png) ![alt text](image-4.png)
 
-
-
-User Requests → Backend Logs → Monitoring Script
-                                      ↓
-                         Extract metrics (error_rate, response_time in ms (Threshold: 250ms then timeout)) (500 Internal Server Error, 404 Not Found, 401 Unauthorized, etc)
-                                      ↓
-                              Send to Model
 
 {
   "timestamp": "10:00",
