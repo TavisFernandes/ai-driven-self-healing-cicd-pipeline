@@ -35,9 +35,16 @@ const requestLogger = (req, res, next) => {
 
   res.on('finish', () => {
     const responseTime = Date.now() - start
-    const isError = res.statusCode >= 400
+    const isTimeout = responseTime > 250
+    const isError = res.statusCode >= 400 || isTimeout
 
-    record({ responseTimeMs: responseTime, isError })
+    record({ 
+      responseTimeMs: responseTime, 
+      isError, 
+      status: isTimeout ? 'timeout' : res.statusCode,
+      method: req.method,
+      path: req.path
+    })
 
     logger.info({
       method: req.method,

@@ -1,4 +1,4 @@
-const { getSummary } = require('../utils/metricsStore')
+const { getSummary, getRecentErrors } = require('../utils/metricsStore')
 
 const ML_SERVICE_URL =
   process.env.ML_SERVICE_URL || 'http://localhost:8000'
@@ -59,4 +59,37 @@ const mlEvaluate = async (req, res) => {
   }
 }
 
-module.exports = { summary, mlEvaluate }
+const getMetrics = (req, res) => {
+  const s = getSummary()
+  res.json({
+    error_rate: s.error_rate,
+    response_time: s.response_time_ms,
+    requests: s.sample_count,
+    recent_errors: getRecentErrors()
+  })
+}
+
+const getPrediction = async (req, res) => {
+  const s = getSummary()
+  try {
+    const r = await fetch(`${ML_SERVICE_URL}/predict`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        error_rate: Number(s.error_rate),
+        response_time: Number(s.response_time_ms),
+      }),
+    })
+
+    if (!r.ok) {
+      return res.status(502).json({ prediction: 'FAIL', detail: 'ML service error' })
+    }
+
+    const data = await r.json()
+    return res.json({ prediction: data.prediction || 'SAFE' })
+  } catch (err) {
+    return res.status(503).json({ prediction: 'FAIL', detail: 'Could not reach ML service' })
+  }
+}
+
+module.exports = { summary, mlEvaluate, getMetrics, getPrediction }

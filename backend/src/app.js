@@ -18,10 +18,16 @@ app.use(express.json())            // Parse JSON request bodies
 app.use(morgan('dev'))             // HTTP request logging to console
 app.use(requestLogger)             // Custom logger → writes metrics to logs/app.log
 
+const { getMetrics, getPrediction } = require('./controllers/metricsController')
+
 // ─── Routes ─────────────────────────────────────────────
 app.use('/products', productRoutes)
 app.use('/cart',     cartRoutes)
 app.use('/checkout', checkoutRoutes)
+
+app.get('/metrics', getMetrics)
+app.get('/prediction', getPrediction)
+
 app.use('/metrics', metricsRoutes)
 app.use('/',         authRoutes) // /login and /register at root
 

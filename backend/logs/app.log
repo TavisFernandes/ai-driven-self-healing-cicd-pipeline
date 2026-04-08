@@ -10,3 +10,9 @@
 {"level":"info","message":{"error":false,"method":"GET","path":"/","response_time_ms":1,"status":200,"timestamp":"2026-04-04T19:17:10.402Z"},"timestamp":"2026-04-04T19:17:10.402Z"}
 {"level":"info","message":{"error":false,"method":"GET","path":"/health","response_time_ms":2,"status":200,"timestamp":"2026-04-04T19:17:10.420Z"},"timestamp":"2026-04-04T19:17:10.420Z"}
 {"level":"info","message":{"error":false,"method":"POST","path":"/login","response_time_ms":2,"status":200,"timestamp":"2026-04-04T19:17:10.464Z"},"timestamp":"2026-04-04T19:17:10.464Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/","response_time_ms":6,"status":304,"timestamp":"2026-04-07T16:55:37.405Z"},"timestamp":"2026-04-07T16:55:37.405Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/","response_time_ms":2,"status":304,"timestamp":"2026-04-07T16:55:37.410Z"},"timestamp":"2026-04-07T16:55:37.410Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/","response_time_ms":2,"status":304,"timestamp":"2026-04-07T16:55:40.829Z"},"timestamp":"2026-04-07T16:55:40.829Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/","response_time_ms":1,"status":304,"timestamp":"2026-04-07T16:55:40.831Z"},"timestamp":"2026-04-07T16:55:40.831Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/","response_time_ms":2,"status":304,"timestamp":"2026-04-07T16:55:54.896Z"},"timestamp":"2026-04-07T16:55:54.896Z"}
+{"level":"info","message":{"error":false,"method":"GET","path":"/","response_time_ms":1,"status":304,"timestamp":"2026-04-07T16:55:54.898Z"},"timestamp":"2026-04-07T16:55:54.898Z"}

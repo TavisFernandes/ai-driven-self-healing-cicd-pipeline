@@ -2,8 +2,8 @@
 const MAX_SAMPLES = 500
 const samples = []
 
-function record({ responseTimeMs, isError }) {
-  samples.push({ responseTimeMs, isError, ts: Date.now() })
+function record({ responseTimeMs, isError, status, method, path }) {
+  samples.push({ responseTimeMs, isError, status, method, path, ts: Date.now() })
   if (samples.length > MAX_SAMPLES) samples.shift()
 }
 
@@ -25,4 +25,11 @@ function getSummary() {
   }
 }
 
-module.exports = { record, getSummary }
+function getRecentErrors() {
+  return samples
+    .filter(s => s.isError)
+    .sort((a, b) => b.ts - a.ts)
+    .slice(0, 10);
+}
+
+module.exports = { record, getSummary, getRecentErrors }
